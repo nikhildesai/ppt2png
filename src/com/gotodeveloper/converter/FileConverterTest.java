@@ -1,3 +1,4 @@
+package com.gotodeveloper.converter;
 import java.io.IOException;
 
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
@@ -5,7 +6,7 @@ import org.junit.Test;
 
 public class FileConverterTest {
 
-    FileConverter converter = new FileConverter();
+    FileConverter converter = PptxToPngFileConverter.getInstance();
 
     @Test
     public void test() throws InvalidFormatException, IOException {
